@@ -96,6 +96,7 @@ GEM
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.5.11)
+    io-console (0.5.11-java)
     irb (1.4.2)
       reline (>= 0.3.0)
     jbuilder (2.11.5)
@@ -233,6 +234,7 @@ DEPENDENCIES
   capybara
   debug
   importmap-rails
+  irb
   jbuilder
   puma (~> 5.0)
   rails (~> 7.0.4)
