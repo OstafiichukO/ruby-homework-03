@@ -1,3 +1,5 @@
+<% 
+=begin %>
 <div id="<%= dom_id contact %>">
   <p>
     <strong>First name:</strong>
@@ -20,3 +22,19 @@
   </p>
 
 </div>
+<% 
+=end%>
+
+
+<tbody id="<%= dom_id contact %>">
+  <tr>
+    <td><%= contact.first_name %></td>
+    <td><%= contact.last_name %></td>
+    <td><%= contact.email %></td>
+    <td><%= contact.telephone %></td>
+    <td><%= link_to "Show", contact, class:"btn btn-light btn-sm", style:"width: 100%; height: 100%;"%></td>
+    <td><%= link_to "Edit", edit_contact_path(contact), class:"btn btn-light btn-sm", style:"width: 100%; height: 100%;" %></td>
+    <td><%= button_to "Destroy", contact, method: :delete, class:"btn btn-light btn-sm", style:"width: 100%; height: 100%;" %></td>
+  </tr>
+
+</tbody>

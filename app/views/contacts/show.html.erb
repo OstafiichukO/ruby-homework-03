@@ -1,10 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @contact %>
-
-<div>
-  <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
-  <%= link_to "Back to contacts", contacts_path %>
-
-  <%= button_to "Destroy this contact", @contact, method: :delete %>
+<div class="col-md-6">
+  <div class="h-100 p-5 bg-light border rounded-3">
+    <h2><%= @contact.first_name %> <%= @contact.last_name %></h2>
+    <p>Email: <%= @contact.email %></p>
+    <p>Telephone: <%= @contact.telephone %></p>
+    <br/>
+    <%= link_to "Edit", edit_contact_path(@contact), class:"btn btn-outline-secondary" %> | <%= link_to "Back to contacts", contacts_path, class:"btn btn-outline-secondary" %>
+  </div>
 </div>
